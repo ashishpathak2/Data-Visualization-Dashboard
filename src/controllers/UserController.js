@@ -84,6 +84,14 @@ const handleUserLogout = async (req, res) => {
     });
 };
 
+const handleClearFilters = (req, res) => {
+    res.clearCookie('age');
+    res.clearCookie('gender');
+    res.clearCookie('fromDate');
+    res.clearCookie('toDate');
+    res.redirect('/main'); 
+  };
+
 module.exports = {
-    handleUserAuthPage, handleUserSignin, handleUserSignup, handleUserLogout
+    handleUserAuthPage, handleUserSignin, handleUserSignup, handleUserLogout,handleClearFilters
 }
