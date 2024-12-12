@@ -45,24 +45,25 @@ This project is a responsive analytics dashboard designed for real-time product 
 
 ### Frontend
 
-- Framework: [Your choice of frontend framework, e.g., React, Angular, or Vue.js].
-- Chart Library: [e.g., Chart.js, D3.js, or Highcharts].
-- Responsive Styling: [CSS/SCSS and framework like Bootstrap or TailwindCSS].
+- Template-Engine: Ejs.
+- Chart Library: Chart.js.
+- Responsive Styling: TailwindCSS.
 
 ### Backend
 
-- Framework: [Your choice of backend framework, e.g., Node.js with Express, Flask, or Django].
+- Framework: Express Js.
+- Database: MongoDB.
 - API Integration: Handles data fetching, filtering, and chart updates.
 - Data Pipeline: Processes data from the provided dataset for real-time analytics.
 
 ### Authentication
 
-- Library: [e.g., Passport.js, JWT, or Firebase Authentication].
-- Secure session and token management.
+- Custom-Authentication.
+- Express-session.
 
 ### Cookie Management
 
-- Library: [e.g., js-cookie].
+- Default Express-session Cookies.
 - Stores and retrieves user preferences.
 
 ### Dataset
@@ -77,7 +78,6 @@ The project uses the dataset provided in the following link:
 ### Prerequisites
 
 - Node.js and npm installed.
-- [Any other dependencies, e.g., Python, if required].
 
 ### Steps
 
@@ -92,13 +92,9 @@ The project uses the dataset provided in the following link:
    ```
 3. Start the backend server:
    ```bash
-   npm run start:server
+   npm run watch
    ```
-4. Start the frontend application:
-   ```bash
-   npm run start
-   ```
-5. Access the application in your browser at `http://localhost:3000`.
+4. Access the application in your browser at `http://localhost:3000`.
 
 ---
 
